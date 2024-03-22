@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro Cliente</title>
+</head>
+<body>
+
+
+<form action='/AV1.2_Web/novo'>
+
+<h1>Cadastro de Cliente</h1>
+
+
+<label for='idnome'>Nome:</label>
+<input type = 'text' id='idnome' name ='nome'/><br><br>
+
+
+<label for="idrua">Descrição:</label>
+<input type = 'text' id='idrua' name ='rua'/><br><br>
+
+<label for="idnumero">Preço:</label>
+<input type = 'number' id='idnumero' name ='numero' min='0' /><br><br>
+
+<label for="idbairro">Preço:</label>
+<input type = 'number' id='idbairro' name ='bairro' min='0' /><br><br>
+
+<label for="idtelefone">Preço:</label>
+<input type = 'number' id='idtelefone' name ='telefone' min='0' /><br><br>
+
+
+<button onclick="gravarCliente()"> Gravar cliente</button>
+<button onclick="window.location.href='/AV1.2_Web/Index.html'"> Cancelar </button>
+
+
+
+</form>
+
+<script>
+
+function gravarCliente(){
+	
+	//alert("Seus dados foram gravados com sucesso!!");
+	windows.location.href='/AV1_Web/Index.html';
+		
+}
+
+</script>
+
+
+
+
+</body>
+</html>

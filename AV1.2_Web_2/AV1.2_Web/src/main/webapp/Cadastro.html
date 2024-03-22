@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro</title>
+</head>
+<body>
+
+
+<form action='/AV1.2_Web/novo'>
+
+<h1>Cadastro de Sabores</h1>
+
+
+<label for='idnome'>Nome:</label>
+<input type = 'text' id='idnome' name ='nome'/><br><br>
+
+
+<label for="iddescricao">Descrição:</label>
+<input type = 'text' id='iddescricao' name ='descricao'/><br><br>
+
+<label for="idpreco">Preço:</label>
+<input type = 'number' id='idpreco' name ='preco' min='0' /><br><br>
+
+
+<button onclick="gravar()"> Gravar </button>
+<button onclick="window.location.href='/AV1.2_Web/Index.html'"> Cancelar </button>
+
+
+
+</form>
+
+<script>
+
+function gravar(){
+	
+	//alert("Seus dados foram gravados com sucesso!!");
+	windows.location.href='/AV1_Web/Index.html';
+		
+}
+
+</script>
+
+
+
+
+</body>
+</html>
